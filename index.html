@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarthak Dhumal | Software Developer Portfolio</title>
+
+  <meta name="description" content="Professional portfolio of Sarthak Dhumal – Software Developer focused on Web Development and Python." />
+  <meta name="author" content="Sarthak Dhumal" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0e14;
+      color: #e6e8ec;
+      line-height: 1.7;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #0b0e14;
+      border-bottom: 1px solid #1f2740;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e6e8ec;
+      font-weight: 500;
+      opacity: 0.85;
+      position: relative;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      color: #7c5cff;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #7c5cff;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #aab0c0;
+      max-width: 720px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: #121826;
+      border: 1px solid #1f2740;
+      border-radius: 14px;
+      padding: 22px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #121826;
+      color: #aab0c0;
+    }
+
+    /* ===== FX ===== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Sarthak Dhumal</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+
+<section class="fade-up">
+  <h1>Hello, I’m Sarthak Dhumal</h1>
+  <p class="subtitle">
+    A Computer Science student and aspiring software developer who believes in
+    learning by building, growing through discipline, and improving through consistency.
+  </p>
+</section>
+
+<section id="about" class="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science Engineering student with a strong interest in software development,
+    particularly in web technologies and Python-based problem solving.
+    I focus on building practical projects that strengthen my understanding of real-world systems.
+  </p>
+  <p>
+    My strength lies in my mindset — I value consistency, self-improvement,
+    and the courage to start even when challenges feel difficult.
+    Over time, I have developed the habit of learning deeply and applying concepts
+    by building complete projects instead of stopping at theory.
+  </p>
+  <p>
+    I aim to grow into a dependable software engineer who can adapt quickly,
+    think logically, and contribute meaningfully to a development team.
+  </p>
+</section>
+
+<section id="skills" class="fade-up">
+  <h2>Technical Skills</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript, Responsive Design</p>
+    </div>
+    <div class="card">
+      <h3>Backend & Programming</h3>
+      <p>Python, PHP, Java (Core)</p>
+    </div>
+    <div class="card">
+      <h3>Databases</h3>
+      <p>MySQL, SQLite</p>
+    </div>
+    <div class="card">
+      <h3>Strengths</h3>
+      <p>Problem Solving, Logical Thinking, Discipline, Continuous Learning</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="fade-up">
+  <h2>Projects</h2>
+  <div class="grid cols-2">
+
+    <div class="card">
+      <h3>Blood Donation Management System</h3>
+      <p>
+        Full-stack web application to manage blood donors, hospitals,
+        blood availability, and requests using PHP and MySQL.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Smart Crop Detection & Recommendation System</h3>
+      <p>
+        Machine learning system that recommends suitable crops
+        based on soil nutrients, temperature, humidity, and rainfall.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Vehicle Number Plate Recognition</h3>
+      <p>
+        Python application using OpenCV to detect and recognize
+        vehicle number plates through image processing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Automated Resume Screening Tool</h3>
+      <p>
+        Python-based system that analyzes resumes and job descriptions
+        to rank candidates based on skill relevance.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Email Automation & Reminder System</h3>
+      <p>
+        Automation tool that sends scheduled emails and reminders
+        to simplify notification and follow-up tasks.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Stock Market Data Analyzer</h3>
+      <p>
+        Python and Pandas-based tool to fetch, analyze,
+        and visualize historical stock market data.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="fade-up">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Email:</strong> sarthak.dhumal8007@gmail.com</p>
+    <p><strong>Location:</strong> Maharashtra, India</p>
+    <p>
+      I am actively seeking internship or entry-level opportunities
+      where I can apply my skills, learn from experienced developers,
+      and grow as a software engineer.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Sarthak Dhumal | Built with clarity, discipline, and purpose</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
